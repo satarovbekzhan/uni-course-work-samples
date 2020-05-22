@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алгоритм Кока-Янгера-Касами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 id="title">— Алгоритм Кока-Янгера-Касами —</h1>
+        <textarea class="item" id="grammar" cols="30" rows="10" placeholder="A -> BC                                                                                                                    A -> a                                                                                                                    S -> ε">
+S -> AB|BC
+A -> BA|a
+B -> CC|b
+C -> AB|a</textarea>
+        <input class="item" id="word" type="text" placeholder="Строка" value="baaba">
+        <input class="item" id="button" type="button" value="ПРОВЕРИТЬ">
+        <h1 id="dots">&#8226;&nbsp;&#8226;&nbsp;&#8226;</h1>
+        <div id="output">
+            Process log...
+        </div>
+    </main>
+    <script src="cyk.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Turing Machine Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+
+        <input type="text" id="alphabet" placeholder="alphabet">
+
+        <button id="start" title="Start">&#8883;</button>
+        <button id="reset" title="Reset Machine">&#8635;</button>
+        <button id="info" title="Info">&#9432;</button>
+
+        <span id="authors">Turing Machine Simulator</span>
+
+        <div id="tape">
+            <button id="add_new_cell_before" title="Add New Cell Before Tape">&plus;</button>
+            <!--<select id="1">
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+            </select>-->
+            <button id="add_new_cell_after" title="Add New Cell After Tape">&plus;</button>
+        </div>
+
+        <table id="states">
+            <tr>
+                <th></th>
+                <th><button id="add_column" title="Add New State Column">&plus;</button></th>
+            </tr>
+        </table>        
+    </main>
+    <script src="turing.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

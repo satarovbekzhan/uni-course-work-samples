@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    width: 50vw;
+    height: auto;
+    margin: 10px auto;
+    grid-template-areas: 'title title title title'
+                        'grammar grammar grammar grammar'
+                        'word word word button'
+                        'dots dots dots dots'
+                        'output output output output';
+    gap: 10px;
+}
+
+.item {
+    border: #515A5A 1px solid;
+    outline: none;
+}
+
+#title {
+    grid-area: title;
+    cursor: help;
+    text-align: center;
+}
+
+#grammar {
+    grid-area: grammar;
+    height: auto;
+    resize: vertical;
+}
+
+#word {
+    grid-area: word;
+}
+
+#button {
+    grid-area: button;
+    color: #515A5A;
+    background-color: white;
+    cursor: pointer;
+}
+
+#button:hover {
+    color: white;
+    background-color: #515A5A;
+    cursor: pointer;
+}
+
+#dots {
+    grid-area: dots;
+    text-align: center;
+}
+
+#output {
+    grid-area: output;
+    height: auto;
+    width: 100%;
+    background-color: #F2F4F4;
+    overflow-x: auto;
+    white-space: nowrap;
+}

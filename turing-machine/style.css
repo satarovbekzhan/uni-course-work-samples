@@ -1,0 +1,140 @@
+body {
+    background-color: #D5DBDB;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+    display: block;
+    position: relative;
+    height: auto;
+    width: 810px;
+    background-color: #F8F9F9;
+    margin: 50px auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 2px;
+}
+
+main:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#alphabet {
+    width: 320px;
+    border: #273746 solid 1px;
+    border-radius: 3px;
+    margin: 40px 40px 0 40px;
+    background-color: transparent;
+    padding: 3px 10px;
+    box-sizing: border-box;
+    line-height: 0;
+    overflow: hidden;
+}
+
+#start, #reset, #info {
+    width: 20px;
+    border: 1px solid #17202A;
+    border-radius: 3px;
+    padding: 2px 4px;
+    margin-right: 10px;
+    color: #17202A;
+    background-color: transparent;
+}
+
+#start:hover, #reset:hover, #info:hover {
+    color: #fff;
+    background-color: #17202A;
+}
+
+#authors {
+    font-size: larger;
+    margin-left: 20px;
+}
+
+#tape {
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 730px;
+    background-color: transparent;
+    border: #17202A solid 1px;
+    margin: 40px;
+    border-radius: 3px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#tape select, button {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 10px 5px;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    text-align-last: center;
+    border: #17202A solid 1px;
+    border-radius: 3px;
+    background-color: transparent;
+    outline: none;
+}
+
+#add_new_cell_before {
+    margin: 10px 0 10px 10px;
+}
+
+#add_new_cell_after {
+    margin: 10px 10px 10px 5px;
+}
+
+#tape button {
+    color: #17202A;
+    background-color: transparent;
+}
+
+#tape button:hover {
+    border: 1px solid #17202A;
+    color: #fff;
+    background-color: #17202A;
+}
+
+#states {
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 730px;
+    background-color: transparent;
+    border: #17202A solid 1px;
+    margin: 10px 40px 40px 40px;
+    padding-bottom: 20px;
+    border-radius: 3px;
+    overflow-x: auto;
+}
+
+#states th, td {
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#states td {
+    border: 1px solid #17202A;
+}
+
+#states td input {
+    height: 100%;
+    width: 40px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+#states tr th button {
+    color: #17202A;
+    background-color: transparent;
+}
+
+#states tr th button:hover {
+    color: #fff;
+    background-color: #17202A;
+}
